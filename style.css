@@ -1,0 +1,645 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation styles now live in the shared nav.css (linked on every page). */
+
+
+
+
+.landing {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  text-align: center;
+}
+
+.main-heading {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--gold);
+}
+
+.banner h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 2rem 0;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  width: 60rem;
+  margin: 0 auto 2rem auto;
+  letter-spacing: 0.1rem;
+}
+
+.banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 5.5rem;
+  cursor: pointer;
+  margin: 0.1rem;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.banner-btn-1 {
+  background-color: var(--gold);
+  border: none;
+  color: #222;
+}
+
+.banner-btn-1:hover {
+  background-color: transparent;
+  color: var(--gold);
+  border: 0.1rem solid var(--gold);
+}
+
+.banner-btn-2 {
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  color: #fff;
+}
+
+.banner-btn-2:hover {
+  background-color: var(--gold);
+  color: #222;
+  border: 0.1rem solid var(--gold);
+}
+
+.swiper {
+  width: 100%;
+  height: 85%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+span.swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  margin-right: 1.5rem !important;
+  background-color: #aaa;
+  position: relative;
+}
+
+span.swiper-pagination-bullet::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0.2rem solid #aaa;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  border: 0.2rem solid #fff;
+}
+
+.landing-contact {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+
+.details {
+  display: flex;
+}
+
+.details i {
+  font-size: 2rem;
+  color: var(--gold);
+  margin-right: 2rem;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.details div span:nth-child(1) {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.details div span:nth-child(2) {
+  font-size: 1.4rem;
+  color: #bbb;
+  width: 30rem;
+}
+.about {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letitbe{
+  margin: 0 3rem;
+  text-align: center;
+  background-color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 0.2rem #2a2727;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #2a2727;
+}
+
+.about div {
+  width: 30rem;
+  height: 35rem;
+  margin: 0 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about i {
+  width: 9rem;
+  height: 10rem;
+  font-size: 4rem;
+  -webkit-text-stroke: 0.2rem #2a2727;
+  color: transparent;
+  border: 0.1rem solid #2a2727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2a2727;
+}
+
+.about p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #2a2727;
+}
+.menu {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url(images/image8.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.menu-left {
+  width: 50%;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.menu-left h2 {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: -4rem;
+}
+
+.menu-left p {
+  font-size: 2rem;
+  color: #777;
+  width: 50rem;
+  margin: 2rem 0 4rem auto;
+  line-height: 1.5;
+
+}
+
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 5.5rem;
+  background-color: transparent;
+  border: 0.1rem solid var(--gold);
+  color: var(--gold);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: var(--gold);
+  color: #222;
+}
+
+.menu-right {
+  width: 50%;
+  margin-left: 3rem;
+}
+
+.menu-right-images {
+  width: 60rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-img-wrapper {
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.menu-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
+
+.menu-img-wrapper:hover img {
+  transform: scale(1.3);
+}
+.data {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(images/omoimage33.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data > div {
+  width: 25rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon-wrapper {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid var(--gold);
+  transition: all 0.3s;
+}
+
+.data i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  -webkit-text-stroke: 0.2rem var(--gold);
+  color: transparent;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.icon-wrapper:hover .icon-bg {
+  background-color: var(--gold);
+  transform: rotateZ(135deg);
+}
+
+.icon-wrapper:hover i {
+  -webkit-text-stroke: 0.2rem #2a2727;
+}
+
+.num {
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+.info {
+  font-size: 1.8rem;
+  color: black ;
+}
+.robocu {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+    url(images/image8.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.robocu-banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.robocu-banner .main-heading {
+  font-size: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.robocu-banner h2 {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: -4rem;
+}
+
+.robocu-banner p {
+  font-size: 1.6rem;
+  color: #777;
+  margin-top: 4rem;
+  line-height: 1.2;
+}
+
+.contact {
+  width: 100%;
+  height: 60vh;
+  background-color: #000;
+  display: flex;
+}
+
+.contact-left {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(images/omoimage.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.contact-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 3rem 2rem;
+}
+
+.form-message {
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin: 1rem 2rem 0;
+  min-height: 1.8rem;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input,
+textarea {
+  width: 30rem;
+  height: 5rem;
+  padding: 1rem 1rem 2rem 0;
+  margin: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 5rem;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #fff;
+}
+
+.contact-btn {
+  width: 30rem;
+  height: 6rem;
+  background-color: var(--gold);
+  color: #2a2727;
+  margin: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: #999;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 45%;
+  }
+
+  .menu-img-wrapper {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .robocu {
+    height: 35vh;
+  }
+
+  .contact-left {
+    display: none;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .input-group input,
+  textarea,
+  .contact-btn {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing-contact div span:nth-child(2) {
+    display: none;
+  }
+
+  .menu-left {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .menu-left p {
+    margin: 2rem auto 4rem auto;
+  }
+
+  .menu-right {
+    display: none;
+  }
+
+  .robocu {
+    height: 35vh;
+  }
+
+  .robocu h2 {
+    width: 50rem;
+    margin: auto;
+  }
+
+  .robocu-banner p {
+    width: 60rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .contact {
+    height: 90vh;
+  }
+
+  .input-group input,
+  textarea,
+  .contact-btn {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+
+  .landing-contact {
+    height: 19rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details div {
+    width: 20rem;
+  }
+
+  .about {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  .about div {
+    width: 60rem;
+    margin: 0 2rem;
+  }
+
+  .robocu {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 32%;
+  }
+
+  .robocu {
+    height: 120vh;
+  }
+
+  .input-group input,
+  textarea,
+  .contact-btn {
+    width: 50rem;
+  }
+
+}

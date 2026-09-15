@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Shared base — design tokens used across every page.
+   Link this FIRST, before the page's own stylesheet.
+   Note: the per-page resets are intentionally left in place because the
+   pages deliberately use different fonts (Poppins vs. Nunito).
+   ========================================================================== */
+
+:root {
+  --gold: #c49b63;
+  --dark: #2a2727;
+  --black: #000;
+}
+
+html {
+  font-size: 62.5%;
+}
